@@ -12,6 +12,7 @@ public class TestFile {
         System.out.println(isPalindrome("racecar"));
         System.out.println(dateStr("08/01/2001"));
         System.out.println(sumUpTo(10));
-        System.out.println(leastCommonMultiple(1,2,3));
+        System.out.println(leastCommonMultiple(1,0,0));
+        System.out.println(quadSolver(1,10,3));
     }
 }
