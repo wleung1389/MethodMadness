@@ -85,23 +85,23 @@ public class WLeungLib {
         }
         if(num1%3 == 0 && num1%5 == 0)
         {
-            System.out.print("baz.");
+            System.out.println("baz.");
         }
         else
         {
             if(num1%3 == 0)
             {
-                System.out.print("foo.");
+                System.out.println("foo.");
             }
             else
             {
                 if(num1%5 == 0)
                 {
-                    System.out.print("bar.");
+                    System.out.println("bar.");
                 }
                 else
                 {
-                    System.out.print(num1 + ".");
+                    System.out.println(num1 + ".");
                 }
             }
         }
