@@ -13,7 +13,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Checks if a word is a palindrome.
      * @param str
      * @return
      */
@@ -29,7 +29,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Returns MM/DD/YY in DD-MM-YY format.
      * @param str
      * @return
      */
@@ -41,7 +41,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Returns the main string with the first instance of the sub string cut out.
      * @param mainStr
      * @param subStr
      * @return
@@ -52,7 +52,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     Prints out 1 to num and swaps out multiples of 3 for "foo", multiples of 5 for "bar" and multiples of 3 and 5 for "baz".
      * @param num1
      */
     public static void fooBarBaz(int num1)
@@ -108,18 +108,38 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Returns a message encoded in Vignere Cipher.
      * @param Message
      * @param Key
      * @return
      */
     public static String vigCipher(String Message, String Key)
     {
-        return Message + Key;
+        String Key2 = "";
+        int i = 0;
+        while(Key2.length() <+ Message.length())
+        {
+            if(i == Key.length())
+            {
+                i = 0;
+            }
+            else
+            {
+                Key2 += Key.substring(i,i+1);
+                i++;
+            }
+        }
+        Key2 = Key2.toLowerCase();
+        Message = Message.toLowerCase();
+        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+        for(int c = 0; c <= Message.length(); i++)
+        {
+            int num = alphabet.indexOf(Key.substring(c,c-1));
+        }
     }
 
     /**
-     *
+     *Returns number of times a letter appears in at least 2 words.
      * @param word1
      * @param word2
      * @param word3
@@ -131,7 +151,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Checks if number is in Fibonnaci sequence.
      * @param num
      * @return
      */
@@ -141,7 +161,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Prints out multiplication table.
      * @param base
      * @param range
      */
@@ -151,7 +171,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Return sum of the numbers from 0 to input.
      * @param a
      * @return
      */
@@ -166,7 +186,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Finds roots using the quadratic equation.
      * @param a
      * @param b
      * @param c
@@ -191,7 +211,7 @@ public class WLeungLib {
     }
 
     /**
-     *
+     *Returns least common multiple.
      * @param a
      * @param b
      * @param c

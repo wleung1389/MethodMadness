@@ -20,13 +20,13 @@ public class TestFile {
         fooBarBaz(10);
         //Unfinished
         System.out.print("vigCipher : ");
-        System.out.println(vigCipher("hi","bye"));
+        System.out.println(vigCipher("Attack","bye"));
         System.out.print("stringUnion : ");
         System.out.println(stringUnion("a","b","c"));
 
         System.out.print("isFibonnaci : ");
         System.out.println(isFibonnaci(2));
-        System.out.print("multiplicationTable : ");
+        System.out.println("multiplicationTable : ");
         multiplicationTable(3,4);
         //Unfinished
         //Math Methods
