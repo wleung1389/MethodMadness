@@ -132,10 +132,7 @@ public class WLeungLib {
         Key2 = Key2.toLowerCase();
         Message = Message.toLowerCase();
         char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-        for(int c = 0; c <= Message.length(); i++)
-        {
-            int num = alphabet.indexOf(Key.substring(c,c-1));
-        }
+        return "Work in Progress : " + Key2 + Message + alphabet;
     }
 
     /**
@@ -147,7 +144,7 @@ public class WLeungLib {
      */
     public static String stringUnion(String word1, String word2, String word3)
     {
-        return word1 + word2 + word3;
+        return "Work in Progress : " + word1 + word2 + word3;
     }
 
     /**

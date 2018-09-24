@@ -18,7 +18,7 @@ public class TestFile {
         System.out.println(cutOut("catatonic cat","cat"));
         System.out.print("fooBarBaz : ");
         fooBarBaz(10);
-        //Unfinished
+        //Unfinished --------------------------------------------
         System.out.print("vigCipher : ");
         System.out.println(vigCipher("Attack","bye"));
         System.out.print("stringUnion : ");
@@ -28,7 +28,7 @@ public class TestFile {
         System.out.println(isFibonnaci(2));
         System.out.println("multiplicationTable : ");
         multiplicationTable(3,4);
-        //Unfinished
+        //Unfinished---------------------------------------------
         //Math Methods
         System.out.print("sumUpTo : ");
         System.out.println(sumUpTo(10));
