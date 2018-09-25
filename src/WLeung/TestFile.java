@@ -18,9 +18,11 @@ public class TestFile {
         System.out.println(cutOut("catatonic cat","cat"));
         System.out.print("fooBarBaz : ");
         fooBarBaz(10);
-        //Unfinished --------------------------------------------
         System.out.print("vigCipher : ");
-        System.out.println(vigCipher("Attack","bye"));
+        System.out.println(vigCipher("AttackAtDawn","Lemon"));
+
+        //Unfinished --------------------------------------------
+
         System.out.print("stringUnion : ");
         System.out.println(stringUnion("a","b","c"));
 

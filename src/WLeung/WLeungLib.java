@@ -140,14 +140,14 @@ public class WLeungLib {
         {
             Index1 = alphabet.indexOf(Message.substring(c,c+1));
             Index2 = alphabet.indexOf(Key2.substring(c,c+1));
-            Index3 = Index1 + Index2 + 1;
+            Index3 = Index1 + Index2;
             if(Index3 > 25)
             {
-                Index3 -= 25;
+                Index3 -= 26;
             }
             encodedMessage += alphabet.substring(Index3,Index3+1);
         }
-        return "Work in Progress : " + Key2 + Message + alphabet;
+        return encodedMessage;
     }
 
     /**
