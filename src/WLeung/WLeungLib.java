@@ -117,7 +117,7 @@ public class WLeungLib {
     {
         String Key2 = "";
         int i = 0;
-        while(Key2.length() <+ Message.length())
+        while(Key2.length() <= Message.length())
         {
             if(i == Key.length())
             {
@@ -131,7 +131,22 @@ public class WLeungLib {
         }
         Key2 = Key2.toLowerCase();
         Message = Message.toLowerCase();
-        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String encodedMessage = "";
+        int Index1 = 0;
+        int Index2 = 0;
+        int Index3 = 0;
+        for(int c = 0; c < Message.length(); c++)
+        {
+            Index1 = alphabet.indexOf(Message.substring(c,c+1));
+            Index2 = alphabet.indexOf(Key2.substring(c,c+1));
+            Index3 = Index1 + Index2 + 1;
+            if(Index3 > 25)
+            {
+                Index3 -= 25;
+            }
+            encodedMessage += alphabet.substring(Index3,Index3+1);
+        }
         return "Work in Progress : " + Key2 + Message + alphabet;
     }
 
